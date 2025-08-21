@@ -1,0 +1,81 @@
+@startuml
+
+' 1. Clase Persona con subclases
+class Persona {
+  - nombre : String
+  - direccion : String
+  - telefono : String
+}
+
+class PersonaNatural
+class PersonaJuridica
+
+Persona <|-- PersonaNatural
+Persona <|-- PersonaJuridica
+
+' 2. Clase Cuenta Bancaria
+class Cuenta {
+  - nroCuenta : String
+  - propietario : Persona
+  - saldoNeto : Double
+  - fechaApertura : Date
+  + deposito(monto: Double)
+  + retiro(monto: Double)
+  + anulacion()
+  + calcularSaldo() : Double
+}
+
+class CuentaAhorros
+class CuentaCorriente
+
+Cuenta <|-- CuentaAhorros
+Cuenta <|-- CuentaCorriente
+
+' 3. Clase Vehículo
+class Vehiculo {
+  - placa : String
+  - marca : String
+  - modelo : String
+  - anio : int
+}
+
+class Automovil
+class Camion
+class Barco
+class Avion
+
+Vehiculo <|-- Automovil
+Vehiculo <|-- Camion
+Vehiculo <|-- Barco
+Vehiculo <|-- Avion
+
+' 4. Compañía y Empleados
+class Compania {
+  - nombre : String
+  - ruc : String
+}
+
+class Empleado {
+  - nombre : String
+  - cargo : String
+  - sueldo : Double
+}
+
+Compania "1" -- "0..*" Empleado : emplea >
+
+' 5. Factura con cabecera y detalle
+class CabeceraFactura {
+  - nroFactura : String
+  - fecha : Date
+  - cliente : Persona
+}
+
+class DetalleFactura {
+  - cantidad : int
+  - item : String
+  - precioUnitario : Double
+}
+
+CabeceraFactura "1" -- "1..*" DetalleFactura : contiene >
+
+@enduml
