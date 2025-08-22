@@ -10,4 +10,4 @@ def crear_archivo(nombre, tamaño_mb):
 
     print(f"Archivo '{nombre}' creado con {tamaño_mb} MB.")
 
-crear_archivo("archivo_100mb.bin", 100) 
+crear_archivo("archivo_100mb.bin",100) 
