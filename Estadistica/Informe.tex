@@ -1,0 +1,239 @@
+\documentclass[12pt,a4paper]{report}
+
+% Paquetes básicos
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx} % Para insertar imágenes
+\usepackage{amsmath, amssymb}
+\usepackage{booktabs} % Tablas bonitas
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{setspace}
+\usepackage{longtable}
+\geometry{margin=2.5cm}
+\setstretch{1.5}
+
+% Datos de portada
+\title{Capacitación tecnológica como factor de eficiencia en el uso de sistemas de facturación electrónica en la fuerza laboral madura}
+\author{Integrantes: \\
+\\
+Docente: }
+\date{Ciudad -- Año}
+
+\begin{document}
+
+% ==================== CARÁTULA ====================
+\begin{titlepage}
+    \centering
+    {\Large \textbf{Facultad de Ingeniería}}\\[0.5cm]
+    {\large Carrera de Ingeniería ...}\\[3cm]
+    {\LARGE \textbf{Informe de Proyecto}}\\[0.5cm]
+    {\Large \textbf{Capacitación tecnológica como factor de eficiencia en el uso de sistemas de facturación electrónica en la fuerza laboral madura}}\\[3cm]
+    \begin{flushleft}
+        \textbf{Integrantes:} \\
+        \vspace{1cm}
+        \textbf{Docente:} \\
+    \end{flushleft}
+    \vfill
+    {\large Ciudad -- Año}
+\end{titlepage}
+
+% ==================== ÍNDICE ====================
+\tableofcontents
+\newpage
+
+% ==================== INTRODUCCIÓN ====================
+\chapter{Introducción}
+
+\section*{Contexto}
+La empresa desarrolla soluciones tecnológicas para la gestión empresarial (facturación electrónica, POS, manejo de pedidos). En su expansión a distintos sectores, ha identificado que la fuerza laboral madura (mayores de 45--50 años) presenta mayores dificultades para adaptarse al uso de herramientas digitales.
+
+\section*{Problema}
+La brecha digital en trabajadores de mayor edad afecta la eficiencia en el uso de los sistemas:
+\begin{itemize}
+    \item Tiempos de facturación más largos.
+    \item Mayores errores en registros.
+    \item Mayor dependencia del soporte técnico.
+    \item Impacto en la satisfacción de clientes.
+\end{itemize}
+
+\section*{Relevancia}
+Este estudio busca evidenciar, mediante análisis estadístico, cómo la capacitación tecnológica puede mejorar la eficiencia de este grupo laboral y así optimizar la adopción de soluciones tecnológicas en distintos sectores.
+
+\section*{Objetivos}
+\textbf{General:} Evaluar cómo la capacitación tecnológica influye en la eficiencia del uso de sistemas de facturación electrónica en la fuerza laboral madura.
+
+\textbf{Específicos:}
+\begin{enumerate}
+    \item Identificar el nivel de familiaridad tecnológica de los trabajadores maduros.
+    \item Analizar indicadores de eficiencia (errores, tiempos de facturación, satisfacción).
+    \item Estimar intervalos de confianza para los indicadores clave.
+    \item Contrastar hipótesis sobre la relación entre capacitación y eficiencia.
+\end{enumerate}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{diagrama_conceptual.png}
+    \caption{Diagrama conceptual: Edad → Capacitación → Eficiencia tecnológica.}
+\end{figure}
+
+% ==================== PLANTEAMIENTO DEL PROBLEMA ====================
+\chapter{Planteamiento del problema e hipótesis}
+
+\section*{Problema específico}
+¿La capacitación tecnológica mejora la eficiencia en el uso de sistemas de facturación electrónica en la fuerza laboral madura?
+
+\section*{Hipótesis}
+\begin{itemize}
+    \item $H_{0}$: La capacitación tecnológica no influye en la eficiencia de la fuerza laboral madura en el uso de sistemas de facturación electrónica.
+    \item $H_{1}$: La capacitación tecnológica sí influye significativamente en la eficiencia de la fuerza laboral madura en el uso de sistemas de facturación electrónica.
+\end{itemize}
+
+\section*{Variables}
+\begin{longtable}{p{4cm}p{5cm}p{4cm}}
+\toprule
+\textbf{Variable} & \textbf{Definición} & \textbf{Tipo / Medición} \\
+\midrule
+Independiente & Nivel de capacitación tecnológica (horas de capacitación, evaluaciones) & Cuantitativa / Encuestas, registros \\
+Dependiente 1 & Tiempo de facturación & Cuantitativa / Segundos por transacción \\
+Dependiente 2 & Número de errores & Cuantitativa / Conteo de errores \\
+Dependiente 3 & Satisfacción de clientes & Cualitativa / Escala Likert \\
+\bottomrule
+\end{longtable}
+
+% ==================== METODOLOGÍA ====================
+\chapter{Metodología}
+
+\section*{Tipo de estudio}
+Cuantitativo, descriptivo e inferencial.
+
+\section*{Datos}
+\begin{itemize}
+    \item Encuestas y cuestionarios al personal (nivel de confianza tecnológica, autopercepción de habilidades).
+    \item Datos del sistema (tiempo promedio de facturación, errores por transacción).
+    \item Encuestas de satisfacción de clientes internos/externos.
+\end{itemize}
+
+\section*{Técnicas estadísticas}
+\begin{itemize}
+    \item Descriptiva: medias, desviación estándar, porcentajes.
+    \item Distribuciones muestrales: medias de tiempos de facturación, proporción de errores.
+    \item Intervalos de confianza: para tiempos y errores.
+\end{itemize}
+
+\section*{Justificación}
+Estas técnicas permiten comprobar de forma objetiva si la capacitación tiene un efecto significativo en la eficiencia.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{metodologia.png}
+    \caption{Diagrama de flujo de la metodología.}
+\end{figure}
+
+% ==================== ANÁLISIS DE DATOS ====================
+\chapter{Análisis de datos}
+\begin{itemize}
+    \item Edad promedio del personal.
+    \item Horas promedio de capacitación recibida.
+    \item Tiempo promedio de facturación por grupo (con y sin capacitación).
+    \item Porcentaje de errores cometidos.
+\end{itemize}
+
+% Ejemplo de gráficos
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{histograma_edades.png}
+    \caption{Histograma de distribución de edades.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{errores_capacitacion.png}
+    \caption{Errores con vs. sin capacitación.}
+\end{figure}
+
+% ==================== DISTRIBUCIONES MUESTRALES ====================
+\chapter{Cálculo de distribuciones muestrales}
+
+Ejemplo: distribución muestral de la media del tiempo de facturación en personal mayor de 50 años. Incluir fórmulas, supuestos y cálculo paso a paso.
+
+% ==================== INTERVALOS DE CONFIANZA ====================
+\chapter{Intervalos de confianza}
+
+Se calcularán intervalos para:
+\begin{itemize}
+    \item Tiempo promedio de facturación.
+    \item Porcentaje de errores.
+    \item Nivel de satisfacción.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{intervalos_confianza.png}
+    \caption{Intervalos de confianza para indicadores clave.}
+\end{figure}
+
+% ==================== INTERPRETACIÓN ====================
+\chapter{Interpretación de resultados}
+
+Analizar si los intervalos confirman la hipótesis. Interpretar la relación entre edad, capacitación y eficiencia.
+
+\begin{itemize}
+    \item Mejora en eficiencia operativa.
+    \item Mayor satisfacción de clientes.
+    \item Facilidad de expansión a nuevos sectores.
+\end{itemize}
+
+% ==================== CONCLUSIONES ====================
+\chapter{Conclusiones y recomendaciones}
+
+\section*{Conclusiones}
+Resumir hallazgos clave y confirmar o rechazar la hipótesis.
+
+\section*{Recomendaciones}
+\begin{itemize}
+    \item Diseñar programas de capacitación dirigidos a trabajadores maduros.
+    \item Implementar evaluaciones periódicas.
+    \item Invertir en usabilidad de sistemas tecnológicos adaptados a distintas edades.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{antes_despues.png}
+    \caption{Comparativo antes y después de la capacitación.}
+\end{figure}
+
+% ==================== ANEXOS ====================
+\chapter{Anexos}
+\begin{itemize}
+    \item Bases de datos de ejemplo (encuestas, registros).
+    \item Fórmulas detalladas.
+    \item Gráficos adicionales.
+\end{itemize}
+
+% ==================== REFERENCIAS ====================
+\chapter{Referencias}
+\bibliographystyle{apalike}
+\begin{thebibliography}{9}
+
+\bibitem{inei}
+INEI (2023). \textit{Estadísticas de la población laboral en el Perú}.
+
+\bibitem{mintra}
+MINTRA (2022). \textit{Informe sobre brecha digital y empleo en el Perú}.
+
+\bibitem{produce}
+Ministerio de la Producción (2023). \textit{Adopción tecnológica en empresas peruanas}.
+
+\bibitem{sunat}
+SUNAT (2021). \textit{Normativa sobre facturación electrónica en el Perú}.
+
+\bibitem{scielo}
+Autores varios. Artículos académicos en Scielo y Redalyc sobre capacitación digital en adultos.
+
+\end{thebibliography}
+
+\end{document}
